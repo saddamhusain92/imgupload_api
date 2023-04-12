@@ -23,7 +23,7 @@ app.post("/upload", upload.single('imgpick'), (req, res) => {
 
     res.json({
         status:"file Uploaded",
-        image_url: `http://localhost:4000/images/${req.file.filename}`
+        image_url: `https://imageapi-74l0.onrender.com/images/${req.file.filename}`
     })
 })
 
